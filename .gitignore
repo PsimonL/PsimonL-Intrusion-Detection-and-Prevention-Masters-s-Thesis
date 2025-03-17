@@ -1,5 +1,9 @@
 Suricata/classification.config
 Suricata/suricata.rules
-Algorithms/data/
 .vscode/
+Algorithms/.idea
 .idea/
+Algorithms/*.csv
+Algorithms/*.pcap
+Algorithms/data/*.csv
+Algorithms/data/*.pcap
