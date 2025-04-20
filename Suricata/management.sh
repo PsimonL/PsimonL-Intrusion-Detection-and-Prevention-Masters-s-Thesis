@@ -71,3 +71,7 @@ sudo cat /var/log/suricata/tshark/eve.json | jq .
 
 
 sudo suricata -r datasets/Thursday-WorkingHours.pcap -l logging/suricata/ -s /var/lib/suricata/ -c /etc/suricata/suricata.yaml
+
+curl -X POST "http://localhost:3000/rest/user/login" \
+     -H "Content-Type: application/json" \
+     -d '{"email": "'\'' OR true--", "password": "test"}'
