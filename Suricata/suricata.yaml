@@ -15,8 +15,9 @@ suricata-version: "7.0"
 vars:
   # more specific is better for alert accuracy and performance
   address-groups:
+    HOME_NET: "[192.168.10.0/24, 172.16.0.0/16, 205.174.165.68, 205.174.165.66]" # For CIC-IDS2017
     # HOME_NET: "[172.20.136.1/16]"
-    HOME_NET: "[10.0.1.1/24]"
+    # HOME_NET: "[10.0.1.1/24]"
     # HOME_NET: "[10.0.2.1/24]" 
     # HOME_NET: "[10.10.10.1/24]" 
     #HOME_NET: "[192.168.0.0/16,10.0.0.0/8,172.16.0.0/12]"
@@ -25,7 +26,8 @@ vars:
     #HOME_NET: "[172.16.0.0/12]"
     #HOME_NET: "any"
 
-    EXTERNAL_NET: "!$HOME_NET"
+    # EXTERNAL_NET: "!$HOME_NET" # For everything
+    EXTERNAL_NET: "[205.174.165.73, 205.174.165.69, 205.174.165.70, 205.174.165.71]" # For CIC-IDS2017
     #EXTERNAL_NET: "any"
 
     HTTP_SERVERS: "$HOME_NET"
@@ -622,7 +624,9 @@ logging:
 
 # Linux high speed capture support
 af-packet:
-  - interface: ens19  # 10.0.1.1/24, to Host
+  - interface: default  # For CIC-IDS2017
+    enabled: no         
+  # - interface: ens19  # 10.0.1.1/24, to Host
   # - interface: ens20  # 10.0.2.1/24, to Kali
   # - interface: ens21  # 10.10.10.1/24, IDS - default gateway
   # - interface: ens18  # 172.20.136.1/16, to Internet: curl http://testmynids.org/uid/index.html
@@ -856,7 +860,8 @@ pcap-file:
   #  - auto: Suricata uses a statistical approach to detect when
   #  checksum off-loading is used. (default)
   # Warning: 'checksum-validation' must be set to yes to have checksum tested
-  checksum-checks: auto
+  # checksum-checks: auto
+  checksum-checks: no
 
 # See "Advanced Capture Options" below for more options, including Netmap
 # and PF_RING.
@@ -1050,13 +1055,18 @@ app-layer:
 
            # Can be specified in kb, mb, gb.  Just a number indicates
            # it's in bytes.
-           request-body-limit: 100kb
-           response-body-limit: 100kb
+          #  request-body-limit: 100kb
+          #  response-body-limit: 100kb
+           request-body-limit: 10mb
+           response-body-limit: 10mb
+
 
            # inspection limits
-           request-body-minimal-inspect-size: 32kb
+          #  request-body-minimal-inspect-size: 32kb
+           request-body-minimal-inspect-size: 1mb
            request-body-inspect-window: 4kb
-           response-body-minimal-inspect-size: 40kb
+          #  response-body-minimal-inspect-size: 40kb
+           response-body-minimal-inspect-size: 1mb
            response-body-inspect-window: 16kb
 
            # response body decompression (0 disables)
