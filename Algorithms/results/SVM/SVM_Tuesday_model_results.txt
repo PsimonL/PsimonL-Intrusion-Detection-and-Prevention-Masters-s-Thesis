@@ -1,0 +1,14 @@
+==========================================================================================
+===
+./results/SVM/SVM_Tuesday_model_results.txt
+===
+Czas uczenia: 52.19 s
+Macierz konfuzji:
+[[ True Negatives (TN): 85423   False Positives (FP): 940 ]
+ [ False Negatives (FN): 3   True Positives (TP): 2763 ]]
+
+Accuracy: 98.94%
+Precision (dla klasy ATTACK): 74.62%
+Recall (dla klasy ATTACK): 99.89%
+F1-score: 85.42%
+==========================================================================================

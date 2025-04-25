@@ -1,0 +1,13 @@
+==========================================================================================
+===
+./results/SVM/SVM_Thursday_model_results.txt
+===
+Macierz konfuzji:
+[[ True Negatives (TN): 89187   False Positives (FP): 2096 ]
+ [ False Negatives (FN): 5   True Positives (TP): 438 ]]
+
+Accuracy: 97.71%
+Precision (dla klasy ATTACK): 17.28%
+Recall (dla klasy ATTACK): 98.87%
+F1-score: 29.43%
+==========================================================================================

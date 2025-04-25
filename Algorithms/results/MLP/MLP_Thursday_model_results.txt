@@ -1,0 +1,13 @@
+==========================================================================================
+===
+./results/MLP/MLP_Thursday_model_results.txt
+===
+Macierz konfuzji:
+[[ True Negatives (TN): 88255   False Positives (FP): 3028 ]
+ [ False Negatives (FN): 9   True Positives (TP): 434 ]]
+
+Accuracy: 96.69%
+Precision (dla klasy ATTACK): 12.54%
+Recall (dla klasy ATTACK): 97.97%
+F1-score: 22.23%
+==========================================================================================

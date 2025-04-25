@@ -1,0 +1,13 @@
+==========================================================================================
+===
+./results/AE/AE_Thursday_model_results.txt
+===
+Macierz konfuzji:
+[[ True Negatives (TN): 91001   False Positives (FP): 282 ]
+ [ False Negatives (FN): 29   True Positives (TP): 414 ]]
+
+Accuracy: 99.66%
+Precision (dla klasy ATTACK): 59.48%
+Recall (dla klasy ATTACK): 93.45%
+F1-score: 72.70%
+==========================================================================================

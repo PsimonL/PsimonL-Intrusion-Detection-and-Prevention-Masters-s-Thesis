@@ -1,0 +1,14 @@
+==========================================================================================
+===
+./results/AE/AE_Wednesday_model_results.txt
+===
+Czas uczenia: 55.35 s
+Macierz konfuzji:
+[[ True Negatives (TN): 86828   False Positives (FP): 1109 ]
+ [ False Negatives (FN): 60   True Positives (TP): 50285 ]]
+
+Accuracy: 99.15%
+Precision (dla klasy ATTACK): 97.84%
+Recall (dla klasy ATTACK): 99.88%
+F1-score: 98.85%
+==========================================================================================

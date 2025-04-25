@@ -1,0 +1,13 @@
+==========================================================================================
+===
+./results/XGB/XGB_Thursday_model_results.txt
+===
+Macierz konfuzji:
+[[ True Negatives (TN): 91281   False Positives (FP): 2 ]
+ [ False Negatives (FN): 2   True Positives (TP): 441 ]]
+
+Accuracy: 100.00%
+Precision (dla klasy ATTACK): 99.55%
+Recall (dla klasy ATTACK): 99.55%
+F1-score: 99.55%
+==========================================================================================
