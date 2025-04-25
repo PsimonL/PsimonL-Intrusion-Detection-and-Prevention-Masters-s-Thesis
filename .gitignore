@@ -7,3 +7,4 @@ Algorithms/*.csv
 Algorithms/*.pcap
 Algorithms/data/*.csv
 Algorithms/data/*.pcap
+.DS_Store
