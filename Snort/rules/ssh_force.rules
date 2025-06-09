@@ -1,13 +1,12 @@
 alert tcp $EXTERNAL_NET any -> $HOME_NET 22 (
-    msg:"SSH Bruteforce Attack Detected"; 
+    msg:"SSH Brute Force Attack Detected - Multiple Failed Login Attempts"; 
     flow:to_server,established; 
-    content:"SSH-"; depth:4; offset:0; 
-    detection_filter:track by_src, count 5, seconds 60; 
-    threshold:type threshold, track by_src, count 3, seconds 30; 
+    content:"SSH-"; 
+    depth:4; 
+    detection_filter:track by_src, count 10, seconds 60; 
     metadata:policy security-ips drop; 
-    sid:1000006; 
+    sid:1000002; 
     rev:1; 
-    classtype:attempted-recon; 
-    reference:url,owasp.org/www-community/attacks/Brute_force_attack; 
+    classtype:attempted-admin; 
     reference:url,github.com/vanhauser-thc/thc-hydra;
 )

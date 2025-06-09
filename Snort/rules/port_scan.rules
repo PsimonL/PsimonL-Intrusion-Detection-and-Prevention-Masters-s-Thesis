@@ -1,13 +1,11 @@
 alert tcp $EXTERNAL_NET any -> $HOME_NET any (
-    msg:"Port Scanning Activity Detected - Aggressive Nmap Scan"; 
+    msg:"Aggressive Nmap Scan Detected - Multiple Port Probes"; 
     flow:stateless; 
     flags:S; 
-    detection_filter:track by_src, count 5, seconds 10; 
-    threshold:type threshold, track by_src, count 3, seconds 5; 
+    detection_filter:track by_src, count 20, seconds 10; 
     metadata:policy security-ips drop; 
-    sid:1000003; 
+    sid:1000001; 
     rev:1; 
     classtype:attempted-recon; 
-    reference:url,nmap.org/book/man-port-scanning.html; 
-    reference:url,suricata.readthedocs.io/en/latest/rules/detection-filter.html;
+    reference:url,nmap.org/book/man-port-scanning-techniques.html;
 )
