@@ -1,0 +1,14 @@
+==========================================================================================
+===
+./results/XGB/XGB_Friday_model_results.txt
+===
+Czas uczenia: 6.45 s
+Macierz konfuzji:
+[[ True Negatives (TN): 82615   False Positives (FP): 172 ]
+ [ False Negatives (FN): 5   True Positives (TP): 57752 ]]
+
+Accuracy: 99.87%
+Precision (dla klasy ATTACK): 99.70%
+Recall (dla klasy ATTACK): 99.99%
+F1-score: 99.85%
+==========================================================================================

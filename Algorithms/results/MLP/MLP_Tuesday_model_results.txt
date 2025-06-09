@@ -1,0 +1,14 @@
+==========================================================================================
+===
+./results/MLP/MLP_Tuesday_model_results.txt
+===
+Czas uczenia: 29.52 s
+Macierz konfuzji:
+[[ True Negatives (TN): 78986   False Positives (FP): 7377 ]
+ [ False Negatives (FN): 1   True Positives (TP): 2765 ]]
+
+Accuracy: 91.72%
+Precision (dla klasy ATTACK): 27.26%
+Recall (dla klasy ATTACK): 99.96%
+F1-score: 42.84%
+==========================================================================================

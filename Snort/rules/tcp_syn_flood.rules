@@ -1,0 +1,11 @@
+alert tcp any any -> $HOME_NET any (
+    msg:"TCP SYN Flood Attack Detected - High Volume SYN packets"; 
+    flow:stateless; 
+    flags:S,!A; 
+    detection_filter:track by_dst, count 100, seconds 1; 
+    metadata:policy security-ips drop; 
+    sid:1000003; 
+    rev:1; 
+    classtype:denial-of-service; 
+    reference:url,en.wikipedia.org/wiki/SYN_flood;
+)
