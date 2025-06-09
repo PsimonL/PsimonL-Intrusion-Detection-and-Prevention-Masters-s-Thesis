@@ -2,9 +2,9 @@
 ===
 ./results/XGB/XGB_Friday_model_results.txt
 ===
-Czas uczenia: 2.65 s
+Czas uczenia: 6.45 s
 Macierz konfuzji:
-[[ True Negatives (TN): 82616   False Positives (FP): 171 ]
+[[ True Negatives (TN): 82615   False Positives (FP): 172 ]
  [ False Negatives (FN): 5   True Positives (TP): 57752 ]]
 
 Accuracy: 99.87%

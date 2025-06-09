@@ -2,13 +2,13 @@
 ===
 ./results/RF/RF_Wednesday_model_results.txt
 ===
-Czas uczenia: 74.35 s
+Czas uczenia: 127.99 s
 Macierz konfuzji:
-[[ True Negatives (TN): 59756   False Positives (FP): 28181 ]
- [ False Negatives (FN): 1   True Positives (TP): 50344 ]]
+[[ True Negatives (TN): 81324   False Positives (FP): 6613 ]
+ [ False Negatives (FN): 2   True Positives (TP): 50343 ]]
 
-Accuracy: 79.62%
-Precision (dla klasy ATTACK): 64.11%
+Accuracy: 95.22%
+Precision (dla klasy ATTACK): 88.39%
 Recall (dla klasy ATTACK): 100.00%
-F1-score: 78.13%
+F1-score: 93.84%
 ==========================================================================================

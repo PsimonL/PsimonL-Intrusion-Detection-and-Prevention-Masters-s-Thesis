@@ -2,7 +2,7 @@
 ===
 ./results/RF/RF_Tuesday_model_results.txt
 ===
-Czas uczenia: 18.82 s
+Czas uczenia: 18.90 s
 Macierz konfuzji:
 [[ True Negatives (TN): 86137   False Positives (FP): 226 ]
  [ False Negatives (FN): 1   True Positives (TP): 2765 ]]
